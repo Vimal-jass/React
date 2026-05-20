@@ -109,7 +109,7 @@ const App = () => {
     status: "Busy",
     skills: ["Python", "SQL", "Power BI"],
     extraSkills: "+4",
-    description: "Data analyst turning data into insights.",
+    description03: "Data analyst turning data into insights.",
     image: "https://via.placeholder.com/60"
   },
   {
