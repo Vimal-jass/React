@@ -9,62 +9,140 @@ body{
   background: #f4f7fb;
 }
 
-.form{
+.app{
   width: 100%;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  padding: 40px;
 }
 
-.form form{
+/* FORM SECTION */
+
+.form-section{
   width: 100%;
-  max-width: 450px;
+  max-width: 550px;
+  margin: auto;
   background: #fff;
   padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.form-section h1{
+  font-size: 32px;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.form-section p{
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.form-section form{
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
 }
 
-.form input,
-.form textarea{
+.form-section input,
+.form-section textarea{
   width: 100%;
-  padding: 14px;
-  border: 1px solid #dcdcdc;
-  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
   outline: none;
   font-size: 15px;
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
-.form input:focus,
-.form textarea:focus{
+.form-section input:focus,
+.form-section textarea:focus{
   border-color: #007bff;
   box-shadow: 0 0 8px rgba(0,123,255,0.2);
 }
 
-.form textarea{
+.form-section textarea{
   height: 140px;
   resize: none;
 }
 
-.form button{
-  padding: 14px;
+.form-section button{
+  padding: 15px;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   background: #007bff;
   color: white;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
-.form button:hover{
+.form-section button:hover{
   background: #0056b3;
-  transform: translateY(-2px);
+}
+
+/* CARDS */
+
+.cards-container{
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card{
+  width: 320px;
+  background: white;
+  padding: 22px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover{
+  transform: translateY(-6px);
+}
+
+.card-top{
+  margin-bottom: 15px;
+}
+
+.card-top span{
+  background: #e8f1ff;
+  color: #007bff;
+  padding: 6px 12px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.card h2{
+  font-size: 24px;
+  color: #111;
+  margin-bottom: 12px;
+}
+
+.card p{
+  color: #666;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* EMPTY STATE */
+
+.empty{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.empty h2{
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.empty p{
+  color: #777;
 }
